@@ -52,7 +52,7 @@ class Orders extends Admin_Controller
 
 		foreach ($data as $key => $value) {
 
-			$store_data = $this->model_stores->getStoresData($value['store_id']);
+			$store_data = $this->model_stores->getStoresData($value['id']);
 
 			$count_total_item = $this->model_orders->countOrderItem($value['id']);
 			$date = date('d-m-Y', $value['date_time']);

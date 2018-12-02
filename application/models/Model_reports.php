@@ -59,6 +59,8 @@ class Model_reports extends CI_Model
 		}
 	}
 
+
+
 	public function getStoreWiseOrderData($year, $store)
 	{
 		if($year && $store) {

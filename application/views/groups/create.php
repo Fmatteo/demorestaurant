@@ -73,7 +73,7 @@
                         <td><input type="checkbox" name="permission[]" id="permission" value="viewGroup"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="deleteGroup"></td>
                       </tr>
-                      <tr>
+                      <tr  style="display:none;>
                         <td>Stores</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createStore"></td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="updateStore"></td>

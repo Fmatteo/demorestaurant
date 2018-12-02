@@ -106,7 +106,7 @@
                         }
                          ?>></td>
                       </tr>
-                      <tr>
+                      <tr  style="display:none;>
                         <td>Stores</td>
                         <td><input type="checkbox" name="permission[]" id="permission" value="createStore" <?php 
                         if($serialize_permission) {
