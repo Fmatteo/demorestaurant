@@ -333,7 +333,6 @@ class Orders extends Admin_Controller
 			      
 			      <div class="col-sm-4 invoice-col">
 			        <b>Bill ID: </b> '.$order_data['bill_no'].'<br>
-			        <b>Store Name: </b> '.$store_data['name'].'<br>
 			        <b>Table name: </b> '.$table_data['table_name'].'<br>
 			        <b>Total items: </b> '.count($orders_items).'<br><br>
 			      </div>
