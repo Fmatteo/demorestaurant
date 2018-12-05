@@ -1,6 +1,6 @@
 <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="#" class="logo"> <!-- DEFAULT LINK IS INDEX2.PHP -->
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>ADN</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -12,6 +12,8 @@
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
+
+      <!-- <h1 class="header-title"> Restaurant Management System </h1> -->
 
     </nav>
   </header>

@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="<?php echo base_url('assets/dist/css/AdminLTE.min.css') ?>">
   <!-- iCheck -->
   <link rel="stylesheet" href="<?php echo base_url('assets/plugins/iCheck/square/blue.css') ?>">
+  <!-- Customized css -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/dist/css/style.css') ?>">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,52 +30,66 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Lobster+Two:400,700i');
+  </style>
+
 
 </head>
 <body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-logo">
-    <a href="<?php echo base_url('auth'); ?>"><b>Login</b></a>
-  </div>
-  <!-- /.login-logo -->
-  <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
 
-    <?php echo validation_errors(); ?>  
+<header class="header-login">
 
-    <?php if(!empty($errors)) {
-      echo $errors;
-    } ?>
-
-    <form action="<?php echo base_url('auth/login') ?>" method="post">
-      <div class="form-group has-feedback">
-        <input type="email" class="form-control" name="email" id="email" placeholder="Email" autocomplete="off">
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+  <div class="login-box">
+    <div class="login-logo">
+      <!--<a href="<?php echo base_url('auth'); ?>"><b>Welcome</b></a>-->
+      <div class="login-heading"> 
+        <h1 class="login-primary"> WELCOME </h1>
+        <h2 class="login-secondary"> Restaurant Management System </h2> 
       </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" name="password" id="password" placeholder="Password" autocomplete="off">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> Remember Me
-            </label>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+      <p class="login-box-msg">Enter your username and password to login </p>
+
+      <?php echo validation_errors(); ?>  
+
+      <?php if(!empty($errors)) {
+        echo $errors;
+      } ?>
+
+      <form action="<?php echo base_url('auth/login') ?>" method="post">
+        <div class="form-group has-feedback">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email" autocomplete="off">
+          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+          <input type="password" class="form-control" name="password" id="password" placeholder="Password" autocomplete="off">
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="checkbox icheck checkbox-center">
+              <label>
+                <input type="checkbox"> Remember Me
+              </label>
+            </div>
           </div>
+          <!-- /.col -->
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary btn-block btn-flat btn-login">Log In</button>
+          </div>
+          <!-- /.col -->
         </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-        </div>
-        <!-- /.col -->
-      </div>
-    </form>
+      </form>
 
+    </div>
+    <!-- /.login-box-body -->
   </div>
-  <!-- /.login-box-body -->
-</div>
-<!-- /.login-box -->
+  <!-- /.login-box -->
+
+</header>
 
 <!-- jQuery 3 -->
 

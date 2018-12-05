@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="<?php echo base_url('assets/dist/css/style.css') ?>">
+
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -16,8 +18,40 @@
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <?php if($is_admin == true): ?>
+        
+      <div class="transactions-wrapper">
+                    <a href="<?php echo base_url('products/') ?>" class="transactions-link">
+                    <div class="transactions-box">
+                      <img src="./assets/dist/img/total-products.png" alt="Total products">
+                      <span class="transactions-title transactions-title-visible">TOTAL PRODUCTS</span>
+                      <span class="transactions-title transactions-title-invisible">VIEW</span>
+                    </div>
+                    </a>
+                    <a href="<?php echo base_url('orders/') ?>" class="transactions-link">
+                    <div class="transactions-box">
+                      <img src="./assets/dist/img/total-paid-orders.png" alt="Total paid orders">
+                      <span class="transactions-title transactions-title-visible">TOTAL PAID ORDERS</span>
+                      <span class="transactions-title transactions-title-invisible">VIEW</span>
+                    </div>
+                    </a>
+                    <a href="<?php echo base_url('users/') ?>" class="transactions-link">
+                    <div class="transactions-box">
+                      <img src="./assets/dist/img/total-users.png" alt="Total users">
+                      <span class="transactions-title transactions-title-visible">TOTAL USERS</span>
+                      <span class="transactions-title transactions-title-invisible">VIEW</span>
+                    </div>
+                    </a>
+                    <a href="<?php echo base_url('reports/') ?>" class="transactions-link">
+                    <div class="transactions-box">
+                      <img src="./assets/dist/img/total-sales.png" alt="Total users">
+                      <span class="transactions-title transactions-title-visible">TOTAL SALES</span>
+                      <span class="transactions-title transactions-title-invisible">VIEW</span>
+                    </div>
+                    </a>
+                  </div>
 
-        <div class="row">
+        <!-- DEFAULT BOXES -->
+        <div class="row" style="display: none;">
           <div class="col-lg-3 col-xs-6">
             <!-- small box -->
             <div class="small-box bg-aqua">
@@ -38,7 +72,6 @@
             <div class="small-box bg-green">
               <div class="inner">
                 <h3><?php echo $total_paid_orders ?></h3>
-
                 <p>Total Paid Orders</p>
               </div>
               <div class="icon">
@@ -53,7 +86,6 @@
             <div class="small-box bg-yellow">
               <div class="inner">
                 <h3><?php echo $total_users; ?></h3>
-
                 <p>Total Users</p>
               </div>
               <div class="icon">
@@ -68,8 +100,6 @@
             <div class="small-box bg-red">
               <div class="inner" style="padding:25px;">
                 <h3>TOTAL SALES</h3>
-
-                
               </div>
               <div class="icon">
                 <i class="ion ion-android-home"></i>
@@ -78,7 +108,7 @@
             </div>
           </div>
           <!-- ./col -->
-        </div>
+        </div> 
         <!-- /.row -->
       <?php endif; ?>
       
