@@ -23,21 +23,21 @@
                     <a href="<?php echo base_url('products/') ?>" class="transactions-link">
                     <div class="transactions-box">
                       <img src="./assets/dist/img/total-products.png" alt="Total products">
-                      <span class="transactions-title transactions-title-visible">TOTAL PRODUCTS</span>
+                      <span class="transactions-title transactions-title-visible">TOTAL PRODUCTS (<?php echo $total_products ?>)</span>
                       <span class="transactions-title transactions-title-invisible">VIEW</span>
                     </div>
                     </a>
                     <a href="<?php echo base_url('orders/') ?>" class="transactions-link">
                     <div class="transactions-box">
                       <img src="./assets/dist/img/total-paid-orders.png" alt="Total paid orders">
-                      <span class="transactions-title transactions-title-visible">TOTAL PAID ORDERS</span>
+                      <span class="transactions-title transactions-title-visible">TOTAL PAID ORDERS (<?php echo $total_paid_orders ?>)</span>
                       <span class="transactions-title transactions-title-invisible">VIEW</span>
                     </div>
                     </a>
                     <a href="<?php echo base_url('users/') ?>" class="transactions-link">
                     <div class="transactions-box">
                       <img src="./assets/dist/img/total-users.png" alt="Total users">
-                      <span class="transactions-title transactions-title-visible">TOTAL USERS</span>
+                      <span class="transactions-title transactions-title-visible">TOTAL USERS (<?php echo $total_users; ?>)</span>
                       <span class="transactions-title transactions-title-invisible">VIEW</span>
                     </div>
                     </a>
